@@ -1,10 +1,10 @@
-# Jinmu333 Awsl
+# Awsl project
 
-## How do I install these formulae?
+## How do I install these formula ?
 
-`brew install jinmu333/awsl/<formula>`
+`brew install awsl-project/awsl/<formula>`
 
-Or `brew tap jinmu333/awsl` and then `brew install <formula>`.
+Or `brew tap awsl-project/awsl` and then `brew install <formula>`.
 
 ## Documentation
 
