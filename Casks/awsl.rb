@@ -1,16 +1,16 @@
 cask "awsl" do
-  version "0.1.1"
-
-  if Hardware::CPU.intel?
-    url "https://github.com/awsl-project/weibo-awsl-vue/releases/download/electron.0.1.1/awsl-0.1.1-mac.zip"
-    sha256 "7fd0d5c930864f4a926898dae23df07f9a65fb06881fed799488c36d32acdaf7"
-  else
-    url "https://github.com/awsl-project/weibo-awsl-vue/releases/download/electron.0.1.1/awsl-0.1.1-arm64-mac.zip"
-    sha256 "2e300bd8006d05138a105d91fe81bd94e43e51eb1c9b36f48c43193020f69e75"
-  end
+  version "0.1.2"
 
   name "awsl"
-  desc "awsl"
+  desc "Weibo Awsl"
+  if Hardware::CPU.intel?
+    url "https://github.com/awsl-project/weibo-awsl-vue/releases/download/v#{version}/awsl-#{version}-mac.zip"
+    sha256 "ff0f3b0b2c43fffd1f8f4ad25c87f775b6b7b59fcd71676213344207c2714e8b"
+  else
+    url "https://github.com/awsl-project/weibo-awsl-vue/releases/download/v#{version}/awsl-#{version}-arm64-mac.zip"
+    sha256 "0a434604f9db2d4d3c10e0d1dabd5551d1f01325cc742ebf659bec9ed141e567"
+  end
+
   homepage "https://github.com/awsl-project/weibo-awsl-vue/"
 
   app "awsl.app"
