@@ -1,14 +1,18 @@
 cask "awsl-audio-input" do
-  version "0.1.0"
+  version "0.1.1"
 
   name "AWSL语音输入"
   desc "Local macOS voice input app powered by SenseVoice"
   homepage "https://github.com/awsl-project/awsl-audio-input"
 
-  url "https://github.com/awsl-project/awsl-audio-input/releases/download/v#{version}/awsl-audio-input-macOS-arm64.dmg"
-  sha256 "a5daf2a2fcfcae58ff1a01bf4d0ca6b41e87c8fa66db8e04aa9218a60e93ea77"
+  if Hardware::CPU.intel?
+    url "https://github.com/awsl-project/awsl-audio-input/releases/download/v#{version}/awsl-audio-input-macOS-amd64.dmg"
+    sha256 "b0703396d1e0d2684904d336770f9e4c76c5ef51a5d0c06fbde3eb82420806f0"
+  else
+    url "https://github.com/awsl-project/awsl-audio-input/releases/download/v#{version}/awsl-audio-input-macOS-arm64.dmg"
+    sha256 "65fda1155d6644bac7706d36f390885245d4683ce9983598b30f35ad7d88740e"
+  end
 
-  depends_on arch: :arm64
   depends_on macos: ">= :sonoma"
 
   app "AwslVoiceInput.app"
