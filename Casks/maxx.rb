@@ -1,14 +1,14 @@
 cask "maxx" do
-  version "0.13.83"
+  version "0.13.84"
 
   name "maxx"
   desc "maxx"
   if Hardware::CPU.intel?
     url "https://github.com/awsl-project/maxx/releases/download/v#{version}/maxx-macOS-amd64.dmg"
-    sha256 "aa3c3a69d8bf0c84e38ddbaa97234f9d26c92c5139837a64d05e0279be2af932"
+    sha256 "0b636f30daf5021a8cae6114f65ae85448009cbb5bedc1c11621711065bc8358"
   else
     url "https://github.com/awsl-project/maxx/releases/download/v#{version}/maxx-macOS-arm64.dmg"
-    sha256 "3efa5680160e3256475e18b02fd25a0cb7143b1c8fcb3a0720dd149c9a8ef031"
+    sha256 "648c886fe20eb48dd115ebcccf57e31acba694e4f872cc1ad59fc2d01e337978"
   end
 
   homepage "https://github.com/awsl-project/maxx"
