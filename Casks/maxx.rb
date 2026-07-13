@@ -1,16 +1,16 @@
 cask "maxx" do
-  version "0.14.48"
+  version "0.14.49"
 
   name "maxx"
   desc "maxx"
   on_intel do
     url "https://github.com/awsl-project/maxx/releases/download/v#{version}/maxx-macOS-amd64.dmg"
-    sha256 "f352107357dd1b1785b7ea53d6d81f6f32a9ed030d7a3e30b632dc96c298ca80"
+    sha256 "06302d12540dd28f586bab1b7aeac99a712ecba17b35bb1b8a423810f54b7bd5"
   end
 
   on_arm do
     url "https://github.com/awsl-project/maxx/releases/download/v#{version}/maxx-macOS-arm64.dmg"
-    sha256 "4bac49035437cc76de8f9c75b7f774525ee55f238002384f761bee541f3fea68"
+    sha256 "590e501005bfc454e8147af3e957648f0b09afefe3016acfa88ef9c8eeee562e"
   end
 
   homepage "https://github.com/awsl-project/maxx"
